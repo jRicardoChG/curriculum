@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/jricardochg.github.io/static/css/main.d8ac994a.chunk.css",
-    "main.js": "/jricardochg.github.io/static/js/main.f2cb2de8.chunk.js",
-    "main.js.map": "/jricardochg.github.io/static/js/main.f2cb2de8.chunk.js.map",
-    "runtime-main.js": "/jricardochg.github.io/static/js/runtime-main.58dff092.js",
-    "runtime-main.js.map": "/jricardochg.github.io/static/js/runtime-main.58dff092.js.map",
-    "static/js/2.95b035a8.chunk.js": "/jricardochg.github.io/static/js/2.95b035a8.chunk.js",
-    "static/js/2.95b035a8.chunk.js.map": "/jricardochg.github.io/static/js/2.95b035a8.chunk.js.map",
-    "index.html": "/jricardochg.github.io/index.html",
-    "static/css/main.d8ac994a.chunk.css.map": "/jricardochg.github.io/static/css/main.d8ac994a.chunk.css.map",
-    "static/js/2.95b035a8.chunk.js.LICENSE.txt": "/jricardochg.github.io/static/js/2.95b035a8.chunk.js.LICENSE.txt"
+    "main.css": "/curriculum/static/css/main.d8ac994a.chunk.css",
+    "main.js": "/curriculum/static/js/main.f2cb2de8.chunk.js",
+    "main.js.map": "/curriculum/static/js/main.f2cb2de8.chunk.js.map",
+    "runtime-main.js": "/curriculum/static/js/runtime-main.a0d60fb1.js",
+    "runtime-main.js.map": "/curriculum/static/js/runtime-main.a0d60fb1.js.map",
+    "static/js/2.95b035a8.chunk.js": "/curriculum/static/js/2.95b035a8.chunk.js",
+    "static/js/2.95b035a8.chunk.js.map": "/curriculum/static/js/2.95b035a8.chunk.js.map",
+    "index.html": "/curriculum/index.html",
+    "static/css/main.d8ac994a.chunk.css.map": "/curriculum/static/css/main.d8ac994a.chunk.css.map",
+    "static/js/2.95b035a8.chunk.js.LICENSE.txt": "/curriculum/static/js/2.95b035a8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.58dff092.js",
+    "static/js/runtime-main.a0d60fb1.js",
     "static/js/2.95b035a8.chunk.js",
     "static/css/main.d8ac994a.chunk.css",
     "static/js/main.f2cb2de8.chunk.js"
