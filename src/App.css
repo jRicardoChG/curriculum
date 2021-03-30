@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .App {
   text-align: center;
 }
@@ -36,3 +37,46 @@
     transform: rotate(360deg);
   }
 }
+=======
+/**Clases principales del proyecto*/
+
+.flexFatherColum{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+.flexFatherRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+}
+
+.esqueleto{
+  border:solid black 1px;
+  border-radius: 15px;
+}
+
+.total{
+  height:100vh;
+}
+
+
+.margenes{
+  margin: 20px;
+}
+
+.margin0{
+  margin:0px;
+}
+
+.fillHor{
+  width:100%
+}
+
+.fillVert{
+  height:100%
+}
+>>>>>>> 165ca5fb2dbd0b51c22f7947eb1da44fd29c86c7

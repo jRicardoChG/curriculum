@@ -1,0 +1,120 @@
+{
+    "datos":{
+        "areaFoto":{
+            "foto":null,
+            "perfilProfesional":"Pariatur laboris nostrud Lorem aute amet tempor anim minim cupidatat labore laborum cillum.",
+            "idiomas":[
+                {
+                    "idioma":"Ingles",
+                    "nivel":3
+                },
+                {
+                    "idioma":"Español",
+                    "nivel":5
+                }
+            ],
+            "linksExternos":[
+                {
+                    "icono":"Elit eiusmod voluptate",
+                    "enlace":"sadadasdasdasdsadasdasd/sad/asdasdasdas/das",
+                    "palabraEnlace":"enlace"
+                },
+                {
+                    "icono":"Elit eiusmod voluptate",
+                    "enlace":"sadadasdasdasdsadasdasd/sad/asdasdasdas/das",
+                    "palabraEnlace":"enlace"
+                },
+                {
+                    "icono":"Elit eiusmod voluptate",
+                    "enlace":"sadadasdasdasdsadasdasd/sad/asdasdasdas/das",
+                    "palabraEnlace":"enlace"
+                }
+            ],
+            "referencias":[
+                {
+                    "icono":"",
+                    "nombre":"Irure mollit anim deserunt ipsum aliquip.",
+                    "cargo":"Ad voluptate ",
+                    "empresa":"Est excepteur ",
+                    "telefono":"3123123123"
+                },
+                {
+                    "icono":"",
+                    "nombre":"Irure mollit anim deserunt ipsum aliquip.",
+                    "cargo":"Ad voluptate ",
+                    "empresa":"Est excepteur ",
+                    "telefono":"3123123123"
+                },
+                {
+                    "icono":"",
+                    "nombre":"Irure mollit anim deserunt ipsum aliquip.",
+                    "cargo":"Ad voluptate ",
+                    "empresa":"Est excepteur ",
+                    "telefono":"3123123123"
+                }
+            ]
+    
+    
+        },
+        "areaDetalles":{
+            "nombrePersona":"Jaime Ricardo Chávez González",
+            "tituloProfesional":"Ingeniero Electronico",
+            "email":"richago29@gmail.com",
+            "telefono":"3219800194",
+            "ciudadResidencia":"Sogamoso",
+            "experienciaLaboral":[
+                {
+                    "anoInicio":"2018",
+                    "anoFinal":"2019",
+                    "tituloCargo":"Quis tempor reprehenderit consectetur ",
+                    "nombreEmpresa":"Proident cillum esse irure incididunt eiusmod.",
+                    "descripcion":"Enim sit officia velit in. excepteur cupidatat pariatur id voluptate aliqua minim exercitation consequat consequat."
+                },
+                {
+                    "anoInicio":"2020",
+                    "anoFinal":"2021",
+                    "tituloCargo":"Quis tempor reprehenderit consectetur ",
+                    "nombreEmpresa":"Proident cillum esse irure incididunt eiusmod.",
+                    "descripcion":"Enim sit officia velit in. excepteur cupidatat pariatur id voluptate aliqua minim exercitation consequat consequat."
+                },
+                {
+                    "anoInicio":"2021",
+                    "anoFinal":"hoy",
+                    "tituloCargo":"Quis tempor reprehenderit consectetur ",
+                    "nombreEmpresa":"Proident cillum esse irure incididunt eiusmod.",
+                    "descripcion":"Enim sit officia velit in. excepteur cupidatat pariatur id voluptate aliqua minim exercitation consequat consequat."
+                }
+            ],
+            "habilidades":[
+                {
+                    "icono":"",
+                    "nombreHabilidad":"Minim veniam enim qui mollit esse cillum ex."
+                },
+                {
+                    "icono":"",
+                    "nombreHabilidad":"Incididunt ex cupidatat nisi"
+                }
+            ],
+            "formacionAcademica":[
+                {
+                    "nombreEscuela":"In ipsum laborum id nisi enim deserunt excepteur.",
+                    "anoInicio":"2018",
+                    "anoFinal":"2019",
+                    "titulo":"Eiusmod eu officia ad non eu voluptate."
+                },
+                {
+                    "nombreEscuela":"In ipsum laborum id nisi enim deserunt excepteur.",
+                    "anoInicio":"2018",
+                    "anoFinal":"2019",
+                    "titulo":"Eiusmod eu officia ad non eu voluptate."
+                },
+                {
+                    "nombreEscuela":"In ipsum laborum id nisi enim deserunt excepteur.",
+                    "anoInicio":"2018",
+                    "anoFinal":"2019",
+                    "titulo":"Eiusmod eu officia ad non eu voluptate."
+                }
+            ]
+        }
+    }
+}

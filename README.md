@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+**PROYECTO: HOJA DE VIDA EN GITHUBPAGES**
+
+**Descripción**
+Este proyecto tiene por objetivo practicar react en una pagina web sencilla que tenga como objetivo mostrar información que proviene de un **json**, en los casos iniciales el **json** esta definido desdentro del mismo proyecto en **src/datosHojadeVida.json**
+>>>>>>> 165ca5fb2dbd0b51c22f7947eb1da44fd29c86c7
