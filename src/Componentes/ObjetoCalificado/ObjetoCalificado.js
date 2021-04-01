@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import "./ObjetoCalificado.css";
 import "../../App.css";
+import estrellaVacia from "../../imagenes/Estrella_vacia.png";
+import estrellallena from "../../imagenes/Estrella_llena.png";
 
 export default class ObjetoCalificado extends Component {
 
@@ -18,9 +20,9 @@ constructor(props){
         for(let i=0;i<max;i++)
         {
             if(i<actual)
-                salida[i] = <img id = {"estrella"+i} src = "Estrella_llena.png" alt="estrellanivel" className = "estrellas"></img>
+                salida[i] = <img id = {"estrella"+i} src = {estrellallena} alt="estrellanivel" className = "estrellas"></img>
             else
-                salida[i] = <img id = {"estrella"+i} src = "Estrella_vacia.png" alt="estrellanivel"  className = "estrellas"></img>
+                salida[i] = <img id = {"estrella"+i} src = {estrellaVacia} alt="estrellanivel"  className = "estrellas"></img>
         }
         return salida;
     }

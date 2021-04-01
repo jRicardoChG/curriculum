@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "../../App.css";
 import ObjetoCalificado from '../ObjetoCalificado/ObjetoCalificado';
 import "./AreaFoto.css";
+import fotoDefecto from "../../imagenes/imagennoencontrada.png";
 export default class AreaFoto extends Component {
 
     state = {
@@ -27,7 +28,7 @@ export default class AreaFoto extends Component {
                 foto,idiomas,perfilProfesional,linksExternos,referencias
             } = this.props.dataIn.areaFoto;
 
-            this.state.foto = foto===null?"imagennoencontrada.png":foto;
+            this.state.foto = foto===null?fotoDefecto:foto;
             this.state.idiomas = idiomas;
             this.state.perfilProfesional = perfilProfesional;
             this.state.linksExternos = linksExternos;
@@ -38,9 +39,17 @@ export default class AreaFoto extends Component {
 
     render() {
         return (
-            <div id="lateralIzquierdo" className= "esqueleto flexFatherColum areaFoto">
-                <img src={this.state.foto} className="fotoPerfil" alt="imagen"></img>
-                <ObjetoCalificado dataIn = {this.state.idiomas}></ObjetoCalificado>
+            <div id="lateralIzquierdo" className= " esqueleto flexFatherColum areaFoto">
+                <div id="internoFoto" className=" esqueleto internoFoto">
+                    <div id = "borde1">
+                        <div id="divImagen" className= "divImagen">
+                            <img src={this.state.foto} className="fotoPerfil" alt="imagen"></img>
+                        </div>
+                    </div>
+                </div>
+                <div id="seccion1" className = "seccion1">
+                    <ObjetoCalificado dataIn = {this.state.idiomas}></ObjetoCalificado>
+                </div>
             </div>
         )
     }
