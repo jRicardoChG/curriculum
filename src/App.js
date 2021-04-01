@@ -16,11 +16,13 @@ export default class App extends Component {
 
   render(){
     return (
+      <div>
+      <hashRouter basename={process.env.PUBLIC_URL}>
       <div id="appPrincipal" className="flexFatherRow total margenes">
-        <hashRouter basename={process.env.PUBLIC_URL}>
           <AreaFoto dataIn={datos}></AreaFoto>
           <AreaDetalles></AreaDetalles>
-        </hashRouter>
+      </div>
+      </hashRouter>
       </div>
     );
   }
