@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/curriculum/static/css/main.c0c5e489.chunk.css",
-    "main.js": "/curriculum/static/js/main.36dcbe17.chunk.js",
-    "main.js.map": "/curriculum/static/js/main.36dcbe17.chunk.js.map",
+    "main.css": "/curriculum/static/css/main.0a72ccff.chunk.css",
+    "main.js": "/curriculum/static/js/main.35653bc6.chunk.js",
+    "main.js.map": "/curriculum/static/js/main.35653bc6.chunk.js.map",
     "runtime-main.js": "/curriculum/static/js/runtime-main.a0d60fb1.js",
     "runtime-main.js.map": "/curriculum/static/js/runtime-main.a0d60fb1.js.map",
     "static/js/2.95b035a8.chunk.js": "/curriculum/static/js/2.95b035a8.chunk.js",
     "static/js/2.95b035a8.chunk.js.map": "/curriculum/static/js/2.95b035a8.chunk.js.map",
     "index.html": "/curriculum/index.html",
-    "static/css/main.c0c5e489.chunk.css.map": "/curriculum/static/css/main.c0c5e489.chunk.css.map",
-    "static/js/2.95b035a8.chunk.js.LICENSE.txt": "/curriculum/static/js/2.95b035a8.chunk.js.LICENSE.txt"
+    "static/css/main.0a72ccff.chunk.css.map": "/curriculum/static/css/main.0a72ccff.chunk.css.map",
+    "static/js/2.95b035a8.chunk.js.LICENSE.txt": "/curriculum/static/js/2.95b035a8.chunk.js.LICENSE.txt",
+    "static/media/Estrella_llena.b821b072.png": "/curriculum/static/media/Estrella_llena.b821b072.png",
+    "static/media/Estrella_vacia.07fd9b57.png": "/curriculum/static/media/Estrella_vacia.07fd9b57.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a0d60fb1.js",
     "static/js/2.95b035a8.chunk.js",
-    "static/css/main.c0c5e489.chunk.css",
-    "static/js/main.36dcbe17.chunk.js"
+    "static/css/main.0a72ccff.chunk.css",
+    "static/js/main.35653bc6.chunk.js"
   ]
 }
