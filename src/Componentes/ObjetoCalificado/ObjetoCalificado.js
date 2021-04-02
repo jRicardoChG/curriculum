@@ -3,18 +3,14 @@ import "./ObjetoCalificado.css";
 import "../../App.css";
 import estrellaVacia from "../../imagenes/Estrella_vacia.png";
 import estrellallena from "../../imagenes/Estrella_llena.png";
+import Punto from '../Punto/Punto';
 
 export default class ObjetoCalificado extends Component {
 
-constructor(props){
-    super(props)
-    console.log(this.props.dataIn)
-}
-
     state = {
-        maximo: 5        
+        maximo: 10        
     }
-    
+
     renderizarEstrellas = function(actual,max){
         let salida = [];
         for(let i=0;i<max;i++)
@@ -27,6 +23,19 @@ constructor(props){
         return salida;
     }
 
+    renderizarPuntos = function(actual,max){
+        let salida = [];
+        for(let i=0;i<max;i++)
+        {
+            if(i<actual)
+                salida[i] = <Punto id={i} lleno={true} color={"rgb(25, 124, 170)"}></Punto>
+            else
+                salida[i] = <Punto id={i} lleno={false} color={"rgb(25, 124, 170)"}></Punto>
+        }
+        return salida;
+
+    }
+
     renderizarIdiomas = function(){
         let salida = [];
         if(this.props.dataIn !== undefined)
@@ -34,12 +43,12 @@ constructor(props){
             for(let i = 0; i<this.props.dataIn.length;i++)
             {
                 salida[i]=
-                <div id = {"idioma"+i} className = "flexFatherRow esqueleto fillHor">
-                    <div id={"nombreIdioma"+i} className = "flexFatherRow"> 
-                        <p>{this.props.dataIn[i].idioma}</p>
+                <div id = {"idioma"+i} className = "flexFatherRow esqueleto fillHor padding2px">
+                    <div id={"nombreIdioma"+i} className = "flexFatherRow esp65por"> 
+                        <p id={"nombreIdiomaText"+i} className = "parrafoCentrado quitarMagins">{this.props.dataIn[i].idioma}</p>
                     </div>
-                    <div id={"nivelIdioma"+i} className = "flexFatherRow">
-                        {this.renderizarEstrellas(this.props.dataIn[i].nivel, this.state.maximo)}
+                    <div id={"nivelIdioma"+i} className = "flexFatherRow esp35por">
+                        {this.renderizarPuntos(this.props.dataIn[i].nivel, this.state.maximo)}
                     </div>
                 </div>
             }

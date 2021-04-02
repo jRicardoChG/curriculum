@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items:center;
+  box-sizing: border-box;
 }
 
 .flexFatherRow{
@@ -15,14 +16,9 @@
 }
 
 .esqueleto{
-  border:solid black 1px;
+  /* border:solid black 1px; */
   border-radius: 15px;
 }
-
-.total{
-  height:100vh;
-}
-
 
 .margenes{
   margin: 20px;
@@ -39,3 +35,75 @@
 .fillVert{
   height:100%
 }
+
+
+.esp50por{
+  width: 50%;
+}
+
+.esp25por{
+  width: 25%;
+}
+
+.esp75por{
+  width: 75%;
+}
+
+.esp100por{
+  width: 100%;
+}
+
+.espo80por{
+  width:80%;
+}
+
+.espo90por{
+  width:90%;
+}
+
+.esp65por{
+  width: 65%;
+}
+
+.esp35por{
+  width: 35%;
+}
+
+.redondo{
+  border-radius: 50%;
+}
+
+.parrafoCentrado{
+  width: 100%;
+  text-align: center;
+}
+
+.quitarMagins{
+  margin: 0px;
+}
+
+.padding2px{
+  padding: 2px;
+}
+
+.padding4px{
+  padding: 4px;
+}
+
+.padding6px{
+  padding: 6px;
+}
+
+.padding8px{
+  padding: 6px;
+}
+
+.contenerEspacio{
+  box-sizing: border-box;
+}
+
+.textoJustificado{
+  text-align: justify;
+  width: 100%;
+}
+

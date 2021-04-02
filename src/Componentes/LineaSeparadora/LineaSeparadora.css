@@ -1,0 +1,41 @@
+#lineaLargaCont{
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background-color: gray;
+}
+#linealarga{
+    position: absolute;
+    width: 100%;
+    top:4px;
+    background-color: gray;
+    height: 2px;
+}
+
+#areaLineaSeparadora{
+    position: relative;
+    width: 90%;
+}
+
+#lineaGorda{
+    position: absolute;
+    width: 20%;
+    top:2px;
+    left: 40%;
+    background-color: rgb(25, 124, 170);
+    height: 6px;
+}
+
+#lineaCortaCont{
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    background-color: rgb(42, 102, 129);
+}
+
+
+.espacio{
+    box-sizing: border-box;
+    height: 10px;
+    width: 100%;
+}

@@ -3,6 +3,10 @@ import "../../App.css";
 import ObjetoCalificado from '../ObjetoCalificado/ObjetoCalificado';
 import "./AreaFoto.css";
 import fotoDefecto from "../../imagenes/imagennoencontrada.png";
+import LineaSeparadora from "../LineaSeparadora/LineaSeparadora";
+import NombreSeccion from '../NombreSeccion/NombreSeccion';
+import {  } from "module";
+import ParrafoGenerico from '../ParrafoGenerico/ParrafoGenerico';
 export default class AreaFoto extends Component {
 
     state = {
@@ -46,10 +50,20 @@ export default class AreaFoto extends Component {
                             <img src={this.state.foto} className="fotoPerfil" alt="imagen"></img>
                         </div>
                     </div>
-                </div>
-                <div id="seccion1" className = "seccion1">
+                </div>                
+                <NombreSeccion nombreSeccion="Mi Perfil"></NombreSeccion>
+                <LineaSeparadora></LineaSeparadora>
+                <ParrafoGenerico id="perfilPrincipal" contenido = {this.props.dataIn.areaFoto.perfilProfesional} justify = "textoJustificado"></ParrafoGenerico>
+                <NombreSeccion nombreSeccion="Idiomas"></NombreSeccion>
+                <LineaSeparadora></LineaSeparadora>
+                <div id="seccion1" className = "seccion1 contenerEspacio">
                     <ObjetoCalificado dataIn = {this.state.idiomas}></ObjetoCalificado>
                 </div>
+                <NombreSeccion nombreSeccion="Referencias"></NombreSeccion>
+                <LineaSeparadora></LineaSeparadora>
+                <ParrafoGenerico id="referencias" contenido = {this.props.dataIn.areaFoto.perfilProfesional} justify = "textoJustificado"></ParrafoGenerico>
+                <NombreSeccion nombreSeccion="Enlaces Redes Sociales"></NombreSeccion>
+                <LineaSeparadora></LineaSeparadora>
             </div>
         )
     }

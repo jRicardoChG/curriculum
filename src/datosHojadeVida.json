@@ -2,7 +2,7 @@
     "datos":{
         "areaFoto":{
             "foto":null,
-            "perfilProfesional":"Pariatur laboris nostrud Lorem aute amet tempor anim minim cupidatat labore laborum cillum.",
+            "perfilProfesional":"Pariatur laboris nostrud Lorem aute amet tempor anim minim cupidatat labore laborum cillum. Pariatur laboris nostrud Lorem aute amet tempor anim minim cupidatat labore laborum cillum. Lore",
             "idiomas":[
                 {
                     "idioma":"Ingles",
@@ -11,6 +11,10 @@
                 {
                     "idioma":"Español",
                     "nivel":5
+                },
+                {
+                    "idioma":"Polaco irlandes sueco",
+                    "nivel":2
                 }
             ],
             "linksExternos":[

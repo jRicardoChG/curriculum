@@ -1,0 +1,14 @@
+#textoNombreSeccion{
+    margin: 0;
+    color:black;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#areaNombreSeccion{
+    width: 100%;
+    margin-bottom:5px;
+    margin-top:5px;
+}
