@@ -4,6 +4,9 @@ import "../../App.css";
 import estrellaVacia from "../../imagenes/Estrella_vacia.png";
 import estrellallena from "../../imagenes/Estrella_llena.png";
 import iconoDama from "../../imagenes/iconoDama.png";
+import LinkedIn from "../../imagenes/LinkedInLogo.png";
+import torre from "../../imagenes/torre.png";
+import noEncontrada from "../../imagenes/imagennoencontrada.png";
 import iconoCaballero from "../../imagenes/iconoCaballero.png";
 import Punto from '../Punto/Punto';
 import ParrafoGenerico from "../ParrafoGenerico/ParrafoGenerico";
@@ -13,22 +16,29 @@ import ObjetoValorDescripcion from '../ObjetoValorDescripcion/ObjetoValorDescrip
  * Clase para renderiza objetos unos al frente de otros con un porcentaje de espacio definido
  * Entradas:
  * - tipoSalida
+ * 
  * tipo salidas: iconoValor
  * tipoElemento : iconoValor, idiomas, valorValor
  * dataIn: lista de datos
  * 
+ * entradas : 
+ * id = para elobjeto general
  */
 export default class ObjetoCalificado extends Component {
 
     constructor(props)
     {
         super(props)
+    this.clickEnlace = this.clickEnlace.bind(this)
+
         if(this.props.tipoElemento==="idiomas")
             this.renderizar.renderizar = this.renderizarIdiomas;
         else if(this.props.tipoElemento==="iconoValor")
             this.renderizar.renderizar = this.renderizarIconoValor;
         else if(this.props.tipoElemento==="referencias")
             this.renderizar.renderizar = this.renderizarReferencias;
+        else if(this.props.tipoElemento==="enlaces")
+            this.renderizar.renderizar = this.renderizarEnlaces;
     }
 
     state = {
@@ -79,7 +89,7 @@ export default class ObjetoCalificado extends Component {
             for(let i = 0; i<this.props.dataIn.length;i++)
             {
                 salida[i]=
-                <div id = {"idioma"+i} className = "flexFatherRowOCL esqueleto fillHor padding6px">
+                <div id = {"idioma"+i} className = "flexFatherRowOCL esqueleto fillHor padding6px letra08rem">
                     <div id={"nombreIdioma"+i} className = "flexFatherRow esp65porOCL"> 
                         <p id={"nombreIdiomaText"+i} className = "textoJustificado quitarMagins">{this.props.dataIn[i].idioma}</p>
                     </div>
@@ -102,11 +112,11 @@ export default class ObjetoCalificado extends Component {
             for(let i = 0; i<this.props.dataIn.length;i++)
             {
                 salida[i]=
-                <div id = {"iconoValor"+i} className = "flexFatherRowOCL esqueleto fillHor padding2px">
+                <div id = {"iconoValor"+i} className = "flexFatherRowOCL esqueleto fillHor padding2px letra08rem">
                     <div id={"iconoValor"+i} className = "flexFatherRow esp35porOCL"> 
                         <img src = {this.props.dataIn[i].icono==undefined?iconoDama:this.props.dataIn[i].icono} alt="iconoReferencia" className="iconoTamano50px"></img>
                     </div>
-                    <div id={"valorDesc"+i} className = "flexFatherRow esp65porOCL">
+                    <div id={"valorDesc"+i} className = "flexFatherRow esp65porOCL letra08rem">
                         <ParrafoGenerico id = {"nomRef"+i} contenido = {this.props.dataIn[i].nombre}></ParrafoGenerico>
                     </div>
                 </div>
@@ -126,16 +136,16 @@ export default class ObjetoCalificado extends Component {
             for(let i = 0; i<this.props.dataIn.length;i++)
             {
                 salida[i]=
-                <div id = {"refValor"+i} className = "flexFatherColum esqueleto fillHor padding4px">
+                <div id = {"refValor"+i} className = "flexFatherColum esqueleto fillHor padding4px letra08rem">
                     <div className = "fillHor quitarMagins flexFatherRowOCL">
                         <div id={"refValor"+i} className = "esp35porOCL flexFatherRowOCL"> 
                             <img src = {this.props.dataIn[i].icono==undefined?(this.props.dataIn[i].genero==="femenino"?iconoDama:iconoCaballero):this.props.dataIn[i].icono} alt="iconoReferencia" className="iconoTamano50px"></img>
                         </div>
-                        <div id={"refValor"+i} className = "esp65porOCL letra12rem textoJustificado">
+                        <div id={"refValor"+i} className = "esp65porOCL letra12rem textoJustificado letra08rem">
                             <ParrafoGenerico id = {"nomRef"+i} justify = "textoJustificado" contenido = {this.props.dataIn[i].nombre}></ParrafoGenerico>
                         </div>
                     </div>
-                    <div className = "fillHor quitarMagins flexFatherColum">
+                    <div className = "fillHor quitarMagins flexFatherColum letra08rem">
                         <ObjetoValorDescripcion id="telefonos" valor="Telefono" justificacion = "textoJustificado" descripcion={this.props.dataIn[i].telefono}></ObjetoValorDescripcion>
                         <ObjetoValorDescripcion id="empresa" valor="Empresa" justificacion = "textoJustificado" descripcion={this.props.dataIn[i].empresa}></ObjetoValorDescripcion>
                         <ObjetoValorDescripcion id="cargo" valor="Cargo" justificacion = "textoJustificado" descripcion={this.props.dataIn[i].cargo}></ObjetoValorDescripcion>
@@ -146,11 +156,51 @@ export default class ObjetoCalificado extends Component {
         return salida;
     }
 
+    /**
+     * Funcion para renderizar enlaces
+     */
+     renderizarEnlaces = () =>{
+        let salida = [];
+        if(this.props.dataIn !== undefined)
+        {
+            for(let i = 0; i<this.props.dataIn.length;i++)
+            {
+                salida[i]=
+                <div id = {"enlaces"+i} className = "flexFatherRowOCL esqueleto fillHor padding2px letra08rem cambiarColor" onClick={(e) => {this.clickEnlace(e,i)}}>
+                    <div id={"enlaces"+i} className = "flexFatherRow esp35porOCL"> 
+                        <img src = {this.props.dataIn[i].icono==undefined?noEncontrada:this.analizarIconoEnlace(this.props.dataIn[i].icono)} alt="iconoReferencia" className="iconoTamano50px"></img>
+                    </div>
+                    <div id={"enlaces"+i} className = "flexFatherRow esp65porOCL letra08rem">
+                        <a href={this.props.dataIn[i].enlace}>{this.props.dataIn[i].palabraEnlace}</a>
+                    </div>
+                </div>
+            }
+        }
+        return salida;
+    }
 
+
+    /**
+     * metodo par aanalizar los iconos de los enlaces aredes sociales
+     */
+    analizarIconoEnlace = (nombreIcono)=>{
+        if(nombreIcono==="LinkedIn")
+            return LinkedIn;
+        else if(nombreIcono==="torre")
+            return torre;
+        else
+            return noEncontrada;    
+    }
+
+    clickEnlace = function click(e,i){
+        /**me lleva al link del enlace*/
+        e.preventDefault();
+        window.location.href = this.props.dataIn[i].enlace;
+    }
 
     render() {
         return (
-            <div id="objetosCalificados" className = "flexFatherColum fillHor fillVert esqueleto">
+            <div id={"objetosCalificados" + this.props.id} className = "flexFatherColum fillHor fillVert esqueleto" >
                 {this.renderizar.renderizar()}
             </div>
         )

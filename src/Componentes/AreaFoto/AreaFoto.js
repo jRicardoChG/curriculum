@@ -57,16 +57,18 @@ export default class AreaFoto extends Component {
                 <NombreSeccion nombreSeccion="Idiomas"></NombreSeccion>
                 <LineaSeparadora></LineaSeparadora>
                 <div id="seccion1" className = "seccion1 contenerEspacio">
-                    <ObjetoCalificado dataIn = {this.state.idiomas} tipoElemento="idiomas"></ObjetoCalificado>
+                    <ObjetoCalificado id="idiomas" dataIn = {this.state.idiomas} tipoElemento="idiomas"></ObjetoCalificado>
                 </div>
                 <NombreSeccion nombreSeccion="Referencias"></NombreSeccion>
                 <LineaSeparadora></LineaSeparadora>
                 <div id="seccion2" className = "seccion1 contenerEspacio">
-                    <ObjetoCalificado dataIn = {this.state.referencias} tipoElemento="referencias"></ObjetoCalificado>
+                    <ObjetoCalificado id="referencias" dataIn = {this.state.referencias} tipoElemento="referencias"></ObjetoCalificado>
                 </div>
                 <NombreSeccion nombreSeccion="Enlaces Redes Sociales"></NombreSeccion>
                 <LineaSeparadora></LineaSeparadora>
-                <ParrafoGenerico id="referencias" contenido = {this.props.dataIn.areaFoto.perfilProfesional} justify = "textoJustificado"></ParrafoGenerico>
+                <div id="seccion2" className = "seccion1 contenerEspacio">
+                    <ObjetoCalificado id="enlacesRedes" dataIn = {this.state.linksExternos} tipoElemento="enlaces"></ObjetoCalificado>
+                </div>
             </div>
         )
     }

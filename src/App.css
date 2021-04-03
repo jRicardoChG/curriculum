@@ -116,6 +116,15 @@
   font-weight: 600;
 }
 
+.letra04rem{
+  font-size: 0.4rem;
+}
+.letra06rem{
+  font-size: 0.8rem;
+}
+.letra08rem{
+  font-size: 0.8rem;
+}
 .letra12rem{
   font-size: 1.2rem;
 }
@@ -132,6 +141,15 @@
   font-size: 2rem;
 }
 
+a{
+  text-decoration:none;
+  color:black;
+}
+
+.cambiarColor:hover{
+  background-color: rgb(211, 211, 211);
+  border-radius: 20px;
+}
 
 @media only screen and (max-width: 1000px) {
   .areaFoto{
