@@ -26,14 +26,6 @@
     height: 6px;
 }
 
-#lineaCortaCont{
-    position: absolute;
-    width: 50%;
-    height: 5px;
-    background-color: rgb(42, 102, 129);
-}
-
-
 .espacio{
     box-sizing: border-box;
     height: 10px;

@@ -2,3 +2,14 @@
     width: 65%;
     height: 100%;
 }
+
+@media only screen and (max-width: 720px) {
+    .areaDetalles{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        background-color: rgb(230, 230, 230);
+    }
+}

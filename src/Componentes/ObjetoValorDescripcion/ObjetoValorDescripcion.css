@@ -1,29 +1,21 @@
-.estrellas{
-    padding-left: 2px;
-    padding-right: 2px;
-    height: 1em;
-    width: 1em;
-}
-
-.flexFatherRowOCL{
+.flexFatherRowOVD{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items:center;
     box-sizing: border-box;
 }
 
-.esp65porOCL{
+.esp65porOVD{
     width: 65%;
 }
 
-.esp35porOCL{
+.esp35porOVD{
     width: 35%;
 }
 
-
 @media only screen and (max-width: 1000px) {
-    .flexFatherRowOCL{
+    .flexFatherRowOVD{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -31,20 +23,19 @@
         box-sizing: border-box;
     }
     
-    .esp65porOCL{
-        display: flex;
-        align-content: center;
-        justify-content: center;
+    .esp65porOVD{
         width: 100%;
     }
     
-    .esp35porOCL{
+    .esp35porOVD{
         width: 100%;
     }
 
+}
+
+@media only screen and (max-width: 1000px) {
     .textoJustificado{
         text-align: center;
         width: 100%;
     }
 }
-

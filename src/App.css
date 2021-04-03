@@ -107,3 +107,52 @@
   width: 100%;
 }
 
+.iconoTamano50px{
+  max-height:50px;
+  max-width:50px;
+}
+
+.negrita{
+  font-weight: 600;
+}
+
+.letra12rem{
+  font-size: 1.2rem;
+}
+.letra14rem{
+  font-size: 1.4rem;
+}
+.letra16rem{
+  font-size: 1.6rem;
+}
+.letra18rem{
+  font-size: 1.8rem;
+}
+.letra2rem{
+  font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .areaFoto{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      background-color: rgb(230, 230, 230);
+  }
+
+  #appPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+
+  .espo90por{
+    align-self: center;
+    justify-self: center;
+  }
+}

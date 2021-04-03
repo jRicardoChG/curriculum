@@ -24,7 +24,7 @@ export default class AreaFoto extends Component {
     constructor(props){
         super(props)
         
-        console.log(this.props.dataIn.areaFoto.foto);
+        console.log(this.props.dataIn.areaFoto);
         if(this.props.dataIn.areaFoto !== undefined)
         {
             /**destructuring props*/
@@ -44,9 +44,9 @@ export default class AreaFoto extends Component {
     render() {
         return (
             <div id="lateralIzquierdo" className= " esqueleto flexFatherColum areaFoto">
-                <div id="internoFoto" className=" esqueleto internoFoto">
-                    <div id = "borde1">
-                        <div id="divImagen" className= "divImagen">
+                <div id="internoFoto" className=" flexFatherColum esqueleto internoFoto">
+                    <div id = "borde1" className= "quitarMagins flexFatherColum">
+                        <div id="divImagen" className= "divImagen quitarMagins flexFatherColum">
                             <img src={this.state.foto} className="fotoPerfil" alt="imagen"></img>
                         </div>
                     </div>
@@ -57,13 +57,16 @@ export default class AreaFoto extends Component {
                 <NombreSeccion nombreSeccion="Idiomas"></NombreSeccion>
                 <LineaSeparadora></LineaSeparadora>
                 <div id="seccion1" className = "seccion1 contenerEspacio">
-                    <ObjetoCalificado dataIn = {this.state.idiomas}></ObjetoCalificado>
+                    <ObjetoCalificado dataIn = {this.state.idiomas} tipoElemento="idiomas"></ObjetoCalificado>
                 </div>
                 <NombreSeccion nombreSeccion="Referencias"></NombreSeccion>
                 <LineaSeparadora></LineaSeparadora>
-                <ParrafoGenerico id="referencias" contenido = {this.props.dataIn.areaFoto.perfilProfesional} justify = "textoJustificado"></ParrafoGenerico>
+                <div id="seccion2" className = "seccion1 contenerEspacio">
+                    <ObjetoCalificado dataIn = {this.state.referencias} tipoElemento="referencias"></ObjetoCalificado>
+                </div>
                 <NombreSeccion nombreSeccion="Enlaces Redes Sociales"></NombreSeccion>
                 <LineaSeparadora></LineaSeparadora>
+                <ParrafoGenerico id="referencias" contenido = {this.props.dataIn.areaFoto.perfilProfesional} justify = "textoJustificado"></ParrafoGenerico>
             </div>
         )
     }

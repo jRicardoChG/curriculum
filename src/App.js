@@ -6,10 +6,6 @@ import { datos } from "./datosHojadeVida.json";
 
 export default class App extends Component {
 
-  // constructor(props){
-  //   super(props)
-  // }
-
   verDatos = function (){
     console.log(datos);
   } 
